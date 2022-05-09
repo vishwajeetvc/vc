@@ -6,7 +6,7 @@
    =============================
 
 Q. Program to check given number is palindrome number or not.
-ex.  12345 is equal to 54321 to or not.
+ex.  12345 is equal to 54321 or not.
 
 */
 #include<stdio.h>
