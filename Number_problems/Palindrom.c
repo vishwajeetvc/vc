@@ -18,10 +18,9 @@ int main(){
     int	original_number = num;
     while(num > 0){
 	x = num %10;
-	rev = (rev+x)*10;
+	rev = rev*10+x;
 	num/=10;
     }
-    rev/=10;
     if(rev == original_number)
 	printf("Palindrome.\n");
     else
