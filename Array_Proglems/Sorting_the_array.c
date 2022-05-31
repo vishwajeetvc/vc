@@ -1,3 +1,33 @@
+/*
+   ============================
+    Author : Vishwajeet kumar.
+    Email  : vcnvim@gmail.com
+   ============================
+
+Q. Sort a array in ascending or descending order.
+
+Expected output:
+
+--------------------------------------------------
+--------------------------------------------------
+    Enter the size of the array {Maxium 20} :6
+    Enter the 0th element of the array :5
+    Enter the 1st element of the array :2
+    Enter the 2nd element of the array :3
+    Enter the 3rd element of the array :4
+    Enter the 4th element of the array :1
+    Enter the 5th element of the array :2
+    Entered order is :5 2 3 4 1 2 
+    Sorted array is :1 2 2 3 4 5
+--------------------------------------------------
+--------------------------------------------------
+*/
+
+
+
+//Answer
+
+
 #include<stdio.h>
 
 int main(){
@@ -22,6 +52,11 @@ int main(){
     }
     scanf("%d",&a[i]);
   }
+  //Entered order
+  printf("Entered order is :");
+  for(i = 0; i < size ; i++){
+    printf("%d ", a[i]);
+  }
 // Sorting in ascending order.
   for(i = 0; i < size -1; i++){
     for(j = i + 1; j < size ;j++){
@@ -32,6 +67,7 @@ int main(){
       }
     }
   }
+  printf("\nSorted array is :");
   for(i = 0; i < size ; i++){
     printf("%d ", a[i]);
   }
